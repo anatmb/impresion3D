@@ -50,6 +50,7 @@ button {
 .nav__logo {
     width: 30px;
     margin: 3px;
+    object-fit: cover;
 }
 
 
@@ -1174,6 +1175,7 @@ button {
     background-size: cover; /* La imagen se ajusta al contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita la repetición */
+    border-radius: 20px;
 }
 
 .beneficio-descripción{
