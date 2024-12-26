@@ -1,0 +1,1409 @@
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #b9ff66;
+    --color-secundario: #191A23;
+    --gray-color: #f3f3f3;
+    --padding-container: 60px 0;
+}
+
+
+
+body,
+input,
+textarea,
+button {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    /* Agregar animación */
+    /* opacity: 0; */
+    /* transform: translateX(-50px);
+    animation: fadeInSlide 1s ease-out forwards; */
+}
+
+/** hero **/
+
+.nav {
+    --nav-icon-background: url("./assets/menu.svg");
+    --transform-list-menu: translate(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    
+
+}
+
+.nav__logo {
+    width: 30px;
+    margin: 3px;
+}
+
+
+.nav:has(.nav__checkbox:checked) {
+    --nav-icon-background: url("./assets/close.svg");
+    --transform-list-menu: translate(0);
+}
+
+.nav__label,
+.nav_logo-link {
+    z-index: 100;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__label {
+    width: 36px;
+    height: 36px;
+    background-image: var(--nav-icon-background);
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image .4s;
+
+}
+
+.nav__list {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    gap: .5rem;
+    text-align: center;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 0;
+    transform: var(--transform-list-menu);
+    transition: transform .5s;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: .8rem .5rem;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+
+
+.nav__link--cta {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+}
+
+.nav__link:hover {
+    /* text-decoration: underline; */
+    background: linear-gradient(90deg, #ff4500, var(--color-secundario));
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+/**Hero Main**/
+
+
+.hero__main {
+    padding: 1px 0;
+    display: grid;
+    gap: 1.5rem;
+
+
+}
+
+
+
+.hero__title {
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+    color: rgb(3, 3, 3);
+    
+}
+
+.hero__sub-titulo{
+    color: #b33507;
+}
+
+.hero__figure {
+    width: min (100%, 380px);
+    justify-self: center;
+}
+
+.hero__img {
+    width: 100%;
+    
+
+}
+
+.hero__paragraph {
+    font-size: 1rem;
+    line-height: 2;
+    color: #060606;
+}
+
+.hero__cta {
+    background-color: var(--color-secundario);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem 15px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    font-size: 1rem;
+    /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    /* Hace que el texto sea más destacado */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /* Asegura que actúe como un botón */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
+    /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Transiciones suaves */
+}
+
+/* Hover (Efecto al pasar el mouse) */
+.hero__cta:hover {
+    transform: translateY(-3px);
+    /* Eleva ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    background: linear-gradient(90deg,#ff4500, var(--color-secundario));
+    /* Invierte el degradado */
+}
+
+/* Active (Efecto al hacer clic) */
+.hero__cta:active {
+    transform: translateY(1px);
+    /* Reduce el efecto de elevación */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra más discreta */
+}
+
+
+
+/*Servicios*/
+
+.services {
+    padding: var(--padding-container);
+
+
+}
+
+.title {
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+    font-weight: 500;
+}
+
+/* .title__highlight {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    /* background-color: var(--color-primario);
+} */
+
+.paragraph {
+    margin-top: 1.5rem;
+    line-height: 2;
+}
+
+.paragraph-tarjetas{
+    text-align: center;
+    font-size:smaller;
+    color: #fff;
+
+}
+
+.services__container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
+}
+
+.services__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 5px;
+
+}
+
+
+.services__article {
+    width: min(95%, 450px);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    /* border: 1px solid black; */
+    border-bottom-width: 3px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+}
+
+.services__article--gray {
+    /* background-color: var(--gray-color);
+    --color-title: var(--color-primario); */
+    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+}
+
+.services__article--yellow {
+    background-color: var(--gray-color);
+    ;
+    --color-title: white
+}
+
+.services__article--black {
+    background-color: var(--gray-color);
+    --color-title: white
+}
+
+.services__span {
+    /* background: linear-gradient(90deg, #1b0388, var(--color-secundario)); */
+    /* Invierte el degradado */
+    display: block;
+    /* width: max-content; */
+    /* background-color: var(--color-title); */
+    padding: 2px 6px;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.services__content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.services__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.services__img {
+    min-width: 40px;
+    max-width: 40px;
+    color: #fff;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px 0;
+
+}
+
+
+/*cta*/
+.cta {
+    margin: 30px 0;
+    background: linear-gradient(90deg, #ef5219, var(--color-secundario));
+    border-radius: 10px;
+    padding: 1.3rem 1rem;
+}
+
+.cta__content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+
+}
+
+.cta__texts {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.cta__links {
+    background-color: var(--color-secundario);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem 15px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--color-secundario), #0a0a0a);
+    font-size: 1rem;
+    /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    /* Hace que el texto sea más destacado */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /* Asegura que actúe como un botón */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
+    /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Transiciones suaves */
+}
+
+/* Hover (Efecto al pasar el mouse) */
+.cta__links:hover {
+    transform: translateY(-3px);
+    /* Eleva ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    background: linear-gradient(90deg, #060606, var(--color-secundario));
+    /* Invierte el degradado */
+}
+
+/* Active (Efecto al hacer clic) */
+.cta__links:active {
+    transform: translateY(1px);
+    /* Reduce el efecto de elevación */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra más discreta */
+}
+
+.cta__figure {
+    display: none;
+}
+
+.cta__img {
+    width: 100%;
+}
+
+
+/*FAQ*/
+
+.faq {
+    padding: 10px 0;
+}
+
+.faq__container {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem
+}
+
+.faq__item {
+    background-color: var(--gray-color);
+    padding: 1.5rem;
+    border-radius: 30px;
+    border: 1px solid black;
+    border-bottom-width: 4px;
+
+    --icon-question-url: url("./assets/x-circle-regular-24.png");
+
+}
+
+.faq__item[open] {
+    background-color: var(--color-primario);
+    --icon-question-url: url("./assets/minus-regular-24.png");
+
+
+}
+
+.faq__question {
+    display: flex;
+    cursor: pointer;
+}
+
+.faq__question::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-question-url);
+    transition: background-image .3s;
+    margin-left: auto;
+}
+
+.faq__title {
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.faq__answer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #000000;
+}
+
+
+
+/* contact */
+
+.contact{
+    padding-top: 50px;
+}
+.contact__content {
+    margin-top: 1rem;
+    background-color: var(--gray-color); 
+   
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    display: grip;
+    gap: 2rem;
+}
+
+.contact__figure {
+    display: none;
+}
+
+.contact__img {
+  max-width: 90%; /* La imagen ocupa un máximo del 90% de su columna */
+        max-height: 100%; 
+}
+
+.contact__form {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.contact__label {
+    display: grid;
+    gap: .3rem;
+}
+
+.contact__input,
+.contact__area {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.contact__area {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.contact__submit {
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+/*Footer*/
+.footer {
+
+    background: linear-gradient(90deg, #ff4500, var(--color-secundario)); 
+    /* background-color: #292a32; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin:auto ;
+}
+
+.footer__logo{
+    width: 30px;
+    height: 30px;
+}
+
+.footer__content {
+    color: #ffffff;
+    padding: 20px 0;
+    width: min(90%, 1200px);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.footer__main {
+    display: grid;
+    gap: 0rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__contact {
+    max-width: 250px;
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    display: grid;
+    gap: 1.3rem;
+    text-align: center;
+}
+
+.footer__copy {
+    margin-top: 1rem;
+    justify-self: center;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.footer__newsletter {
+    width: min(100%, 400px);
+    padding: 2rem 1.5rem;
+    background-color: #292a32;
+    border-radius: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 48px 48px;
+    margin: 0 auto;
+    /* Centra horizontalmente */
+}
+
+.footer_email {
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    color: white;
+}
+
+.footer__email::placeholder {
+    color: white;
+}
+
+.footer__submit {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: none;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.footer__social {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+.footer__social-links {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #fff;
+}
+
+.footer__copyright-text{
+    text-align: center;
+}
+
+/*Caracgeristicas*/
+.caracteristicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Diseño para pantallas grandes */
+    gap: 20px; /* Espacio entre columnas */
+    padding: var(--padding-container);
+
+}
+
+.boton-caracteristicas {
+    background-color: var(--color-secundario);
+    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ajusta al contenido */
+    margin: 0; /* Elimina márgenes */
+    line-height: 1; /* Ajusta la altura de línea */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.boton-caracteristicas:hover {
+    transform: translateY(-2px); /* Efecto al pasar el cursor */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+}
+.seccion-primera{
+    padding: 30px 0px;
+    display: grid;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.seccion-primera > h1{
+    font-size: 50px;
+}
+
+
+.seccion-segunda{
+    display: grid;
+    padding: 30px;
+}
+
+.seccion-segunda-superior > h3{
+    font-size: 30px;
+}
+
+.seccion-segunda-superior{
+    display: grid;
+    gap: 10px;
+}
+
+
+/*Beneficio*/
+.beneficios{
+    padding: var(--padding-container);
+}
+
+.titulo-beneficio{
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+}
+
+.beneficio-descripción{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+    gap: 20px;
+
+}
+
+.beneficio-imagen {
+    display: none;
+}
+
+
+.boton-beneficios{
+      background-color: var(--color-secundario);
+      background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ajusta al contenido */
+    margin: 20px 0px; /* Elimina márgenes */
+    line-height: 1; /* Ajusta la altura de línea */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.boton-beneficios:hover {
+    transform: translateY(-2px); /* Efecto al pasar el cursor */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+}
+
+
+/*Testimonios*/
+.Testimonios{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.testimonios-clientes{
+    display: grid;
+   grid-template-columns: 1fr;
+   
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   width: 100%;
+}
+
+
+.testimonios-imagen {
+    width: 60px; /* Tamaño fijo de ancho */
+    height: 60px; /* Tamaño fijo de altura */
+    object-fit: cover;
+    border-radius: 50%; /* Hace la imagen circular */
+}
+
+.testimonios-clientes > div {
+    margin: 20px; /* Espacio alrededor de cada testimonio */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-testimonio{
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+}
+
+
+.Testimonio-titulo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+    padding-bottom: 20px;
+}
+
+
+/*funtion*/
+
+.funcion {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: var(--padding-container);
+}
+
+.titulo-funcion {
+    width: 80%;
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+    color: rgb(3, 3, 3);
+    text-align: center;
+    margin: auto;
+}
+
+/* Diseño de las tarjetas */
+.tarjeta-funcion {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.funcion-imagen {
+    width: 100%; /* Ajustable al contenedor */
+    max-width: 360px; /* Tamaño máximo en pantallas grandes */
+    height: auto; /* Mantiene proporción */
+    object-fit: cover;
+    border: 1px solid #ddd; /* Opcional: Bordes */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: auto;
+}
+
+.funcio__paragraph {
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem); /* Escalable */
+    padding-top: 10px;
+}
+
+
+
+/*Cotizar*/
+.cotizacion {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+    padding: 30px 0;
+    border-radius: 20px;
+    height: 200px;
+    background-image: url('./assets/cotizar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Asegura que el pseudo-elemento no se salga del contenedor */
+}
+
+.cotizacion::before {
+    content: ''; /* Crea el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 241, 241, 0.6); /* Color negro con opacidad del 50% */
+    border-radius: 20px; /* Asegura que coincida con el borde del contenedor */
+    z-index: 1; /* Coloca la superposición debajo del texto */
+}
+
+.cotizacion * {
+    position: relative; /* Coloca el contenido por encima de la superposición */
+    z-index: 2;
+}
+
+.cta__cotizar {
+    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    padding: .4rem 2rem;
+    /* Agrega más espacio horizontal */
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    /* Hace que el texto sea más destacado */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /* Asegura que actúe como un botón */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
+    /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Transiciones suaves */
+}
+
+/* Hover (Efecto al pasar el mouse) */
+.cta__cotizar:hover {
+    transform: translateY(-3px);
+    /* Eleva ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    background: linear-gradient(90deg, #ff4500, var(--color-secundario));
+    /* Invierte el degradado */
+}
+
+/* Active (Efecto al hacer clic) */
+.cta__cotizar:active {
+    transform: translateY(1px);
+    /* Reduce el efecto de elevación */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: #25d366;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+
+
+
+@media(width >=768px) {
+    .hero__main {
+        padding: var(--padding-container);
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        grid-auto-columns: 50% 45%;
+        grid-template-areas:
+             "sub-titulo img"
+            "titulo img"
+            "parrafo img"
+            "link img";
+    }
+
+    .hero__title {
+        grid-area: titulo;
+
+    }
+
+    .hero__paragraph {
+        grid-area: parrafo;
+    }
+
+    .hero__cta {
+        grid-area: link;
+        padding: 1rem 2rem;
+        place-self: start;
+    }
+
+    .hero__figure {
+        grid-area: img;
+    }
+
+    .hero__sub-titulo{
+      grid-area: sub-titulo;
+    }
+
+    /*cta*/
+    .cta__content {
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 45% 45%;
+    }
+
+    .cta__figure {
+        display: block;
+    }
+
+    .cta__links {
+        padding: 1rem 2rem;
+        place-self: start;
+    }
+
+    /*Contact*/
+    .contact__content {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        /* Ajusta las proporciones si es necesario */
+        gap: 2rem;
+        /* Espacio entre columnas */
+        align-items: center;
+        /* Alinea verticalmente */
+    }
+
+    .contact__figure {
+        display: block;
+        /* Asegúrate de que sea visible */
+    }
+
+    /*como funciona*/
+
+.funcion
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: var(--padding-container);
+
+}
+.titulo-funcion{
+    width: 80%;
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+    color: rgb(3, 3, 3);
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.tarjeta-funcion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.funcion-imagen {
+    width: 360px; /* Tamaño fijo de ancho */
+    height: 200px; /* Tamaño fijo de altura */
+    object-fit: cover;
+    border-radius: 1%; /* Hace la imagen circular */
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    justify-content: center;
+}
+
+.funcio__paragraph{
+    font-size:13px;
+    padding-top: 10px;
+}
+
+.encabezado-titulo{
+    padding-bottom: 50px; 
+}
+
+}
+
+
+@media(width>=900px) {
+
+    .container {
+        width: min(95%, 1200px);
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .nav {
+        --transform-list-menu: translate(0);
+    }
+
+    .nav__label {
+        display: none;
+    }
+
+    .nav__list {
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        gap: 1rem;
+    }
+
+
+    
+.hero__main {
+    padding: 1px 0;
+    display: grid;
+    gap: 1.5rem;
+    height: 80vh;
+    background-image: url(./assets/fondo.png);
+    
+    
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /*footer*/
+
+    .footer {
+        background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+        /* background-color: #292a32; */
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin:auto ;
+
+    }
+
+
+
+    .footer__main {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 55% 1fr;
+        grid-template-areas:
+            "logo links media"
+            "contact news news";
+        justify-items: start;
+    }
+
+    .footer__links {
+        grid-area: links;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .footer__content {
+
+        border-radius: 30px 30px 0 0;
+    }
+
+    .footer__links {
+        grid-area: links;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__contact {
+        grid-area: contact;
+       text-align: left;
+       max-width: 300px;
+    }
+
+
+   .footer__copy {
+        justify-self: start;
+        margin-top: 0rem;
+    }
+
+
+    .footer__newsletter {
+        grid-area: news;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .footer__social {
+        justify-self: end;
+        grid-area: media;
+    }
+
+    .footer__logo-link {
+        grid-area: logo;
+    }
+
+
+    /*Beneficios*/
+
+.beneficios{
+    padding: var(--padding-container);
+}
+
+.titulo-beneficio{
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+}
+
+
+.beneficio-imagen {
+    display: block;
+    width: 100%; /* Ancho del div */
+    height: 600px; /* Altura deseada del div */
+    background-image: url('./assets/imagen-benificios.jpg');
+    background-size: cover; /* La imagen se ajusta al contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición */
+}
+
+.beneficio-descripción{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    gap: 20px;
+
+}
+
+.beneficios-reduccion-costo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.boton-beneficios{
+
+    background-color: var(--color-secundario);
+    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ajusta al contenido */
+    margin: 0; /* Elimina márgenes */
+    line-height: 1; /* Ajusta la altura de línea */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.boton-beneficios:hover {
+    transform: translateY(-2px); /* Efecto al pasar el cursor */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+}
+
+.beneficio-descripción-derecha{
+    display: grid;
+    gap: 50px;
+}
+
+
+/*Testimonios*/
+.testimonios-clientes{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   gap: 50px;
+   width: 100%;
+}
+
+
+.testimonios-imagen {
+    width: 60px; /* Tamaño fijo de ancho */
+    height: 60px; /* Tamaño fijo de altura */
+    object-fit: cover;
+    border-radius: 50%; /* Hace la imagen circular */
+}
+
+
+.testimonios-clientes > div {
+    margin: 20px; /* Espacio alrededor de cada testimonio */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-testimonio{
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+}
+
+
+.Testimonio-titulo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+    padding-bottom: 20px;
+}
+
+/*como funciona*/
+
+.funcion
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: var(--padding-container);
+    overflow: hidden;
+
+}
+
+
+.titulo-funcion{
+    width: 80%;
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+    color: rgb(3, 3, 3);
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.tarjeta-funcion{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+}
+
+.funcion-imagen {
+    width: 300px; /* Tamaño fijo de ancho */
+    height: 200px; /* Tamaño fijo de altura */
+    object-fit: cover;
+    border-radius: 1%; /* Hace la imagen circular */
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    justify-content: center;
+}
+
+.funcio__paragraph{
+    font-size:13px;
+    padding-top: 10px;
+}
+
+.encabezado-titulo{
+    padding-bottom: 50px; 
+}
+
+
+}
+
+
+@media (max-width: 1024px) {
+    .caracteristicas {
+        grid-template-columns: 1fr 1fr; /* Cambia a 2 columnas */
+        padding: 20px; /* Ajusta el padding */
+    }
+
+    .seccion-primera > h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .seccion-segunda-superior > h3 {
+        font-size: 25px; /* Ajusta tamaño de los subtítulos */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .caracteristicas {
+        grid-template-columns: 1fr; /* Cambia a 1 columna */
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+
+    .seccion-primera {
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .seccion-primera > h1 {
+        font-size: 30px; /* Reduce más el tamaño del título */
+    }
+
+    .seccion-segunda-superior > h3 {
+        font-size: 20px; /* Reduce tamaño de los subtítulos */
+    }
+
+    .boton-caracteristicas {
+        width: 100%; /* Botón ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 0.8rem 1rem; /* Ajusta el espaciado */
+    }
+
+    .seccion-segunda {
+        padding: 10px; /* Reduce el padding */
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial */
+    transition: all 0.6s ease-out;
+    visibility: hidden; /* Oculta completamente fuera del viewport */
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0); /* Sin desplazamiento */
+    visibility: visible; /* Haz que sea visible */
+}
+
+
+
+
+/* Animación */
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+/* @keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
