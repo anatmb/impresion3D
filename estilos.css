@@ -479,7 +479,7 @@ button {
 
 
 .contact__img {
-  max-width: 80%; /* La imagen ocupa un máximo del 90% de su columna */
+  max-width: 100%; /* La imagen ocupa un máximo del 90% de su columna */
         max-height: 100%; 
         border-radius: 8px;
 }
@@ -1343,8 +1343,6 @@ button {
     padding-bottom: 50px; 
 }
 
-
-     
 .contact h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -1352,9 +1350,10 @@ button {
   }
   
   .contact-info p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1.6;
+  
   }
   
   .contact-info p strong {
@@ -1418,7 +1417,8 @@ button {
 .contact {
     padding: 0rem;
     margin: 0rem;
-    width: 90%;
+    width: 100%;
+    text-align: center;
   }
   .contact-titulo{
     text-align: center;
