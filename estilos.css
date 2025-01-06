@@ -33,7 +33,7 @@ button {
     animation: fadeInSlide 1s ease-out forwards; */
 }
 
-/** hero **/
+/**************************** hero ******************************/
 
 .nav {
     --nav-icon-background: url("./assets/menu.svg");
@@ -117,7 +117,7 @@ button {
     padding: 10px 10px;
 }
 
-/**Hero Main**/
+/*****************************Hero Main*****************************/
 
 
 .hero__main {
@@ -199,7 +199,7 @@ button {
 
 
 
-/*Servicios*/
+/*************************Servicios*********************************/
 
 .services {
     padding: var(--padding-container);
@@ -382,7 +382,7 @@ button {
 }
 
 
-/*FAQ*/
+/*************************FAQ*********************************/
 
 .faq {
     padding: 10px 0;
@@ -439,11 +439,9 @@ button {
 
 
 
-/* contact */
+/************************* contact *****************************/
 
-.contact{
-    padding-top: 50px;
-}
+
 .contact__content {
     margin-top: 1rem;
     background-color: var(--gray-color); 
@@ -458,9 +456,32 @@ button {
     display: none;
 }
 
+
+.contact {
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 90%;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+    
+  }
+
+  .contact-info p strong {
+    color:#ff4500;
+  }
+
+
 .contact__img {
-  max-width: 90%; /* La imagen ocupa un máximo del 90% de su columna */
+  max-width: 80%; /* La imagen ocupa un máximo del 90% de su columna */
         max-height: 100%; 
+        border-radius: 8px;
 }
 
 .contact__form {
@@ -495,7 +516,7 @@ button {
     border: none;
 }
 
-/*Footer*/
+/************************Footer*******************************/
 .footer {
 
     background: linear-gradient(90deg, #ff4500, var(--color-secundario)); 
@@ -619,7 +640,7 @@ button {
     text-align: center;
 }
 
-/*Caracgeristicas*/
+/**************************Caracgeristicas*********************************/
 .caracteristicas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Diseño para pantallas grandes */
@@ -679,7 +700,7 @@ button {
 }
 
 
-/*Beneficio*/
+/***********************Beneficio****************************/
 .beneficios{
     padding: var(--padding-container);
 }
@@ -727,7 +748,7 @@ button {
 }
 
 
-/*Testimonios*/
+/*************************Testimonios**************************/
 .Testimonios{
     align-items: center;
     text-align: center;
@@ -775,7 +796,7 @@ button {
 }
 
 
-/*funtion*/
+/************************funtion*************************/
 
 .funcion {
     text-align: center;
@@ -921,7 +942,6 @@ button {
 
 
 
-
 @media(width >=768px) {
     .hero__main {
         padding: var(--padding-container);
@@ -976,6 +996,10 @@ button {
     }
 
     /*Contact*/
+    .contact-titulo{
+        text-align: center;
+        padding: 5px 0px;
+      }
     .contact__content {
         display: grid;
         grid-template-columns: 50% 40%;
@@ -1320,6 +1344,26 @@ button {
 }
 
 
+     
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #ff4500;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .contact-info p strong {
+    color:#ff4500;
+  }
+
+
+
+
 }
 
 
@@ -1367,6 +1411,33 @@ button {
     .seccion-segunda {
         padding: 10px; /* Reduce el padding */
     }
+
+  
+
+    
+.contact {
+    padding: 0rem;
+    margin: 0rem;
+    width: 90%;
+  }
+  .contact-titulo{
+    text-align: center;
+    padding: 5px 0px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+    
+  }
+
+  .contact-info p strong {
+    color:#ff4500;
+  }
 }
 
 .fade-in-section {
