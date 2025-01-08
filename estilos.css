@@ -27,10 +27,6 @@ button {
     margin: 0 auto;
     overflow: hidden;
     background-color: #ffffff;
-    /* Agregar animación */
-    /* opacity: 0; */
-    /* transform: translateX(-50px);
-    animation: fadeInSlide 1s ease-out forwards; */
 }
 
 /**************************** hero ******************************/
@@ -940,6 +936,98 @@ button {
 
 
 
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        padding: var(--padding-container);
+        max-width: 1200px;
+      
+        border-radius: 10px;
+    }
+    
+    
+    
+    .slider-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 10px;
+        width: max-content; /* Ajusta el ancho automáticamente */
+    }
+    
+    .slider {
+        overflow: hidden; /* Oculta las imágenes fuera de la vista */
+        max-width: calc(300px * 1 + 30px); /* Muestra solo 4 imágenes visibles */
+    }
+    
+    
+    
+    .slide {
+        flex-shrink: 0;
+        width: 300px; /* Tamaño de las imágenes */
+    }
+    
+    .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .slide img:hover {
+        transform: scale(1.05);
+    }
+    
+    button.prev,
+    button.next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ff4400ac;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    button.prev:hover,
+    button.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+    
+    button.prev:focus,
+    button.next:focus {
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+
+
+
 
 
 @media(width >=768px) {
@@ -1064,6 +1152,12 @@ button {
     padding-bottom: 50px; 
 }
 
+.slider {
+    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+    max-width: calc(300px * 2 + 30px); /* Muestra solo 4 imágenes visibles */
+}
+
+
 }
 
 
@@ -1104,6 +1198,96 @@ button {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+/*Galeria*/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    padding: var(--padding-container);
+    max-width: 1200px;
+  
+    border-radius: 10px;
+}
+
+
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+    width: max-content; /* Ajusta el ancho automáticamente */
+}
+
+.slider {
+    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+    max-width: calc(300px * 4 + 30px); /* Muestra solo 4 imágenes visibles */
+}
+
+
+
+.slide {
+    flex-shrink: 0;
+    width: 300px; /* Tamaño de las imágenes */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff4400ac;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:focus,
+button.next:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+  
 
     /*footer*/
 
