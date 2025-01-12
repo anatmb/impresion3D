@@ -8,7 +8,4 @@ app.use(morgan("dev"));
 
 app.use(mainRouter)
 
-
-
-
 module.exports= app;
