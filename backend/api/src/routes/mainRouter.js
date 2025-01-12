@@ -1,17 +1,11 @@
 const {Router} = require ("express");
+
+const { getProductHandler, getDetailtHandler, postProductHandler} =require("../handlers/productHandler");
 const mainRouter = Router();
 
-mainRouter.get("/users", (req, res)=>{ 
-    res.status(200).send("aqui estan todos los productos");
-});
+mainRouter.get("/", getProductHandler);
+mainRouter.get("/:id", getDetailtHandler);
+mainRouter.post("/", postProductHandler);
 
-mainRouter.get("/users/:id", (req, res)=>{ 
-    res.status(200).send("detalle del producto");
-});
-
-
-mainRouter.post("/users", (req, res)=>{ 
-    res.status(200).send("Crear Usuario");
-});
 
 module.exports = mainRouter
