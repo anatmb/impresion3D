@@ -107,7 +107,7 @@ button {
 
 .nav__link:hover {
     /* text-decoration: underline; */
-    background: linear-gradient(90deg, #ff4500, var(--color-secundario));
+    background: linear-gradient(90deg, #331aea, var(--color-secundario));
     color: #ffffff;
     border-radius: 10px;
     padding: 10px 10px;
@@ -133,7 +133,7 @@ button {
 }
 
 .hero__sub-titulo{
-    color: #b33507;
+    color: #331aea;
 }
 
 .hero__figure {
@@ -160,7 +160,7 @@ button {
     padding: 1rem 15px;
     border-radius: 10px;
     text-align: center;
-    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    background: linear-gradient(90deg, var(--color-secundario),#331aea);
     font-size: 1rem;
     /* Ajusta el tamaño del texto */
     font-weight: bold;
@@ -181,7 +181,7 @@ button {
     /* Eleva ligeramente el botón */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     /* Sombra más intensa */
-    background: linear-gradient(90deg,#ff4500, var(--color-secundario));
+    background: linear-gradient(90deg,#331aea, var(--color-secundario));
     /* Invierte el degradado */
 }
 
@@ -256,7 +256,7 @@ button {
 .services__article--gray {
     /* background-color: var(--gray-color);
     --color-title: var(--color-primario); */
-    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    background: linear-gradient(90deg, var(--color-secundario),#331aea);
 }
 
 .services__article--yellow {
@@ -311,7 +311,7 @@ button {
 /*cta*/
 .cta {
     margin: 30px 0;
-    background: linear-gradient(90deg, #ef5219, var(--color-secundario));
+    background: linear-gradient(90deg, #331aea, var(--color-secundario));
     border-radius: 10px;
     padding: 1.3rem 1rem;
 }
@@ -470,7 +470,7 @@ button {
   }
 
   .contact-info p strong {
-    color:#ff4500;
+    color:#331aea;
   }
 
 
@@ -515,7 +515,7 @@ button {
 /************************Footer*******************************/
 .footer {
 
-    background: linear-gradient(90deg, #ff4500, var(--color-secundario)); 
+    background: linear-gradient(90deg, #331aea, var(--color-secundario)); 
     /* background-color: #292a32; */
     width: 100%;
     align-items: center;
@@ -647,7 +647,7 @@ button {
 
 .boton-caracteristicas {
     background-color: var(--color-secundario);
-    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    background: linear-gradient(90deg, var(--color-secundario),#331aea);
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
@@ -720,7 +720,7 @@ button {
 
 .boton-beneficios{
       background-color: var(--color-secundario);
-      background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+      background: linear-gradient(90deg, var(--color-secundario),#331aea);
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
@@ -872,7 +872,7 @@ button {
 }
 
 .cta__cotizar {
-    background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+    background: linear-gradient(90deg, var(--color-secundario),#331aea);
     padding: .4rem 2rem;
     /* Agrega más espacio horizontal */
     border-radius: 10px;
@@ -897,7 +897,7 @@ button {
     /* Eleva ligeramente el botón */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     /* Sombra más intensa */
-    background: linear-gradient(90deg, #ff4500, var(--color-secundario));
+    background: linear-gradient(90deg, #331aea, var(--color-secundario));
     /* Invierte el degradado */
 }
 
@@ -989,7 +989,7 @@ button {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: #ff4400ac;
+        background-color:#331aea;
         color: #fff;
         border: none;
         border-radius: 50%;
@@ -1154,7 +1154,8 @@ button {
 
 .slider {
     overflow: hidden; /* Oculta las imágenes fuera de la vista */
-    max-width: calc(300px * 2 + 30px); /* Muestra solo 4 imágenes visibles */
+    max-width: calc(300px * 2
+     + 30px); /* Muestra solo 4 imágenes visibles */
 }
 
 
@@ -1192,8 +1193,6 @@ button {
     gap: 1.5rem;
     height: 80vh;
     background-image: url(./assets/fondo.png);
-    
-    
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -1255,7 +1254,7 @@ button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #ff4400ac;
+    background-color:#331aea;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -1292,7 +1291,7 @@ button.next:focus {
     /*footer*/
 
     .footer {
-        background: linear-gradient(90deg, var(--color-secundario),#ff4500);
+        background: linear-gradient(90deg, var(--color-secundario),#331aea);
         /* background-color: #292a32; */
         width: 100%;
         align-items: center;
@@ -1541,7 +1540,7 @@ button.next:focus {
   }
   
   .contact-info p strong {
-    color:#ff4500;
+    color:#2200ff;
   }
 
 
