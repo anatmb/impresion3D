@@ -16,53 +16,46 @@
 
 <body>
     <div class="container">
-        <header class=" fade-in-section hero">
+   
+        <header class="fade-in-section hero">
+         
 
             <nav class="nav" aria-label="Primary Navigation">
-                <a href="./" class="nav_logo-link">
-                    <img src="./assets/Logo9.png" class="nav__logo" alt="Hexalamp3D logo">
-                </a>
-
-
-                <label for="nav-toggle" class="nav__label">
-                    <input type="checkbox" class="nav__checkbox" id="nav-toggle" aria-hidden="true">
-                    <span class="nav__burger"></span> <!-- Añade un icono de menú hamburguesa -->
-                </label>
-
-                <ul class="nav__list">
-                    <li class="nav__element">
-                        <a href="#hero__main" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#services" class="nav__link">Servicios</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#caracteristicas" class="nav__link">Caracteristicas</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#testimonials" class="nav__link">Testimonios</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#contact" class="nav__link">Contacto</a>
-                    </li>
-                </ul>
+              
+              <a href="./" class="nav_logo-link">
+                <img src="./assets/Logo9.png" class="nav__logo" alt="Hexalamp3D logo">
+              </a>
+          
+              <label for="nav-toggle" class="nav__label">
+                <input type="checkbox" class="nav__checkbox" id="nav-toggle" aria-hidden="true">
+                <span class="nav__burger"></span>
+              </label>
+          
+              <ul class="nav__list">
+                <li class="nav__element"><a href="#hero__main" class="nav__link">Home</a></li>
+                <li class="nav__element"><a href="#services" class="nav__link">Servicios</a></li>
+                <li class="nav__element"><a href="#caracteristicas" class="nav__link">Características</a></li>
+                <li class="nav__element"><a href="#testimonials" class="nav__link">Testimonios</a></li>
+                <li class="nav__element"><a href="#contact" class="nav__link">Contacto</a></li>
+              </ul>
             </nav>
-
-            <section class="hero__main" id="hero__main">
-
-                <h6 class="hero__sub-titulo"> Hexalamp3D 💡</h6>
-                <h1 class="hero__title"> Transformamos ideas en realidades tridimensionales</h1>
-
-                <figure class="hero__figure">
-                    <!-- <img src="./assets/home.png" class="hero__img" alt="Impresión 3D en proceso"> -->
-                </figure>
+          
+            <section class="hero__main">
+              <div class="hero__content">
+                <h6 class="hero__sub-titulo">Hexalamp3D 💡</h6>
+                <h1 class="hero__title">Diseño e impresión 3D</h1>
                 <p class="hero__paragraph">
-                    Nuestra empresa se dedica a ofrecer soluciones de impresión 3D personalizadas para diversas
-                    industrias. Creemos en la creatividad y la tecnología como motores de cambio.
+                  Nuestra empresa se dedica a ofrecer soluciones de impresión 3D personalizadas para diversas
+                  industrias. Creemos en la creatividad y la tecnología como motores de cambio.
                 </p>
                 <a href="#contact" class="hero__cta">Contáctanos</a>
+              </div>
+          
+              <figure class="hero__figure">
+                <img src="./assets/home.png" class="hero__img" alt="Impresión 3D en proceso">
+              </figure>
             </section>
-        </header>
+          </header>
 
         <main class="main">
             <section class=" fade-in-section  cta">
@@ -100,7 +93,7 @@
                         avanzada,garantizamos rapidez y personalización en cada proyecto
                     </p>
                     <br>
-                    <a href="#services" class="boton-caracteristicas">Servicios 👈🏼</a>
+                    <a href="#services" class="hero__cta">Servicios 👈🏼</a>
                 </div>
                 <div class="seccion-segunda">
                     <div class="seccion-segunda-superior">
@@ -262,12 +255,12 @@
                             </div>
                         </div>
                         <div>
-                            <a href="#services" class="boton-beneficios">Servicios</a>
+                            <a href="#services" class="hero__cta">Servicios</a>
                         </div>
                     </div>
                 </div>
-                <div class="beneficio-imagen">
-                </div>
+                <!-- <div class="beneficio-imagen">
+                </div> -->
             </section>
 
             <!-- <section class="faq">
@@ -358,21 +351,21 @@
                 </div>
 
                 <div class="testimonios-clientes">
-                    <div>
+                    <div class="cada-cliente">
                         <p>⭐​⭐​⭐​⭐​⭐​</p>
                         <p>"La calidad de impresión superó nuestras expectativas."</p>
                         <img src="./assets/laura.png" alt="" class="testimonios-imagen">
                         <h5>Laura</h5>
                         <p>@laisgal75</p>
                     </div>
-                    <div>
+                    <div class="cada-cliente">
                         <p>⭐​⭐​⭐​⭐​⭐​</p>
                         <p>"El proceso fue rápido, buena comunicación y profesional."</p>
                         <img src="./assets/foto.png" alt="" class="testimonios-imagen">
                         <h5>Marcelo Benítez</h5>
                         <p>Motos Esquina</p>
                     </div>
-                    <div>
+                    <div class="cada-cliente">
                         <p>⭐​⭐​⭐​⭐​⭐​</p>
                         <p>"Recomiendo este servicio a todos mis colegas."</p>
                         <img src="./assets/mauge.png" alt="" class="testimonios-imagen">
