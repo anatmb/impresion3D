@@ -1698,10 +1698,20 @@ button.next:focus {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+
+   font-family: "Roboto", sans-serif;
   color: #333;
   background-color: #fff;
   line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; /* negrita */
+}
+
+p {
+  font-weight: 400; /* normal */
 }
 
 /* ====== LAYOUT ====== */
@@ -1719,7 +1729,7 @@ body {
 }
 
 .navbar {
-    background-color: chartreuse;
+  background-color: chartreuse;
   display: flex;
   align-items: center;
   justify-content: space-between;
