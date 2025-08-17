@@ -31,14 +31,14 @@ button {
 
 /**************************** hero ******************************/
 
-.nav {
+/* .nav {
     --nav-icon-background: url("./assets/menu.svg");
     --transform-list-menu: translate(-100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px; 
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* sombra inferior */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* sombra inferior 
 
 }
 
@@ -105,7 +105,7 @@ button {
 }
 
 .nav__link:hover {
-    /* text-decoration: underline; */
+    /* text-decoration: underline; 
     background:#0909fe;
     color: #ffffff;
     border-radius: 10px;
@@ -120,7 +120,7 @@ button {
 /*****************************Hero Main*****************************/
 
 
-.hero__main {
+/* .hero__main {
     padding: 1px 0;
     display: grid;
     gap: 1.5rem;
@@ -166,43 +166,43 @@ button {
     text-align: center;
     background:#0909fe;
     font-size: 1rem;
-    /* Ajusta el tamaño del texto */
+    /* Ajusta el tamaño del texto 
     font-weight: bold;
-    /* Hace que el texto sea más destacado */
+    /* Hace que el texto sea más destacado 
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    /* Asegura que actúe como un botón */
+    /* Asegura que actúe como un botón 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
-    /* Sombra ligera */
+    /* Sombra ligera 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* Transiciones suaves */
+    /* Transiciones suaves 
 }
 
-/* Hover (Efecto al pasar el mouse) */
+/* Hover (Efecto al pasar el mouse) 
 .hero__cta:hover {
     transform: translateY(-3px);
-    /* Eleva ligeramente el botón */
+    /* Eleva ligeramente el botón 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Sombra más intensa */
+    /* Sombra más intensa 
 
     background:#000000;
-    /* Invierte el degradado */
+    /* Invierte el degradado 
 }
 
-/* Active (Efecto al hacer clic) */
+/* Active (Efecto al hacer clic) 
 .hero__cta:active {
     transform: translateY(1px);
-    /* Reduce el efecto de elevación */
+    /* Reduce el efecto de elevación 
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra más discreta */
+    /* Sombra más discreta 
 }
-
+ */
 
 
 /*************************Servicios*********************************/
 
-.services {
+/* .services {
     padding: var(--padding-container);
 
 
@@ -211,7 +211,7 @@ button {
 .title {
     font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
     font-weight: 500;
-}
+} */
 
 /* .title__highlight {
     padding: 6px;
@@ -220,7 +220,7 @@ button {
     /* background-color: var(--color-primario);
 } */
 
-.paragraph {
+/* .paragraph {
     margin-top: 1.5rem;
     line-height: 2;
 }
@@ -253,14 +253,14 @@ button {
     margin: 0 auto;
     padding: 2rem 1.5rem;
     border-radius: 1.5rem;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; 
     border-bottom-width: 3px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
 }
 
 .services__article--gray {
     /* background-color: var(--gray-color);
-    --color-title: var(--color-primario); */
+    --color-title: var(--color-primario); 
     background:#0909fe;
 }
 
@@ -275,12 +275,12 @@ button {
     --color-title: white
 }
 
-.services__span {
+.services__span { */
     /* background: linear-gradient(90deg, #1b0388, var(--color-secundario)); */
-    /* Invierte el degradado */
+    /* Invierte el degradado 
     display: block;
     /* width: max-content; */
-    /* background-color: var(--color-title); */
+    /* background-color: var(--color-title); 
     padding: 2px 6px;
     border-radius: 6px;
     text-align: center;
@@ -313,7 +313,7 @@ button {
 }
 
 
-/*cta*/
+/*cta
 .cta {
     margin: 30px 0;
     background:#000000;
@@ -344,35 +344,35 @@ button {
     text-align: center;
     background:#0909fe;
     font-size: 1rem;
-    /* Ajusta el tamaño del texto */
+    /* Ajusta el tamaño del texto 
     font-weight: bold;
-    /* Hace que el texto sea más destacado */
+    /* Hace que el texto sea más destacado 
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    /* Asegura que actúe como un botón */
+    /* Asegura que actúe como un botón 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
-    /* Sombra ligera */
+    /* Sombra ligera 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* Transiciones suaves */
+    /* Transiciones suaves 
 }
 
-/* Hover (Efecto al pasar el mouse) */
+/* Hover (Efecto al pasar el mouse) 
 .cta__links:hover {
     transform: translateY(-3px);
-    /* Eleva ligeramente el botón */
+    /* Eleva ligeramente el botón 
     box-shadow: 0 6px 12px rgba(255, 254, 254, 0.3);
-    /* Sombra más intensa */
+    /* Sombra más intensa 
     background: linear-gradient(90deg, #060606, var(--color-secundario));
-    /* Invierte el degradado */
+    /* Invierte el degradado 
 }
 
-/* Active (Efecto al hacer clic) */
+/* Active (Efecto al hacer clic) 
 .cta__links:active {
     transform: translateY(1px);
-    /* Reduce el efecto de elevación */
+    /* Reduce el efecto de elevación 
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra más discreta */
+    /* Sombra más discreta 
 }
 
 .cta__figure {
@@ -386,7 +386,7 @@ button {
 
 /*************************FAQ*********************************/
 
-.faq {
+/* .faq {
     padding: 10px 0;
 }
 
@@ -439,11 +439,11 @@ button {
     border-top: 1px solid #000000;
 }
 
-
+ */
 
 /************************* contact *****************************/
 
-
+/* 
 .contact__content {
     margin-top: 1rem;
     background-color: var(--gray-color); 
@@ -481,7 +481,7 @@ button {
 
 
 .contact__img {
-  max-width: 100%; /* La imagen ocupa un máximo del 90% de su columna */
+  max-width: 100%; /* La imagen ocupa un máximo del 90% de su columna 
         max-height: 100%; 
         border-radius: 8px;
 }
@@ -516,13 +516,13 @@ button {
     padding: 1rem;
     border-radius: 10px;
     border: none;
-}
+} */
 
 /************************Footer*******************************/
-.footer {
+/* .footer {
 
     background:#0909fe; 
-    /* background-color: #292a32; */
+    /* background-color: #292a32; 
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -569,7 +569,7 @@ button {
 .footer__contact {
     max-width: 250px;
     margin: 0 auto;
-    /* Centra horizontalmente */
+
     display: grid;
     gap: 1.3rem;
     text-align: center;
@@ -594,7 +594,7 @@ button {
     gap: 1rem;
     grid-template-rows: 48px 48px;
     margin: 0 auto;
-    /* Centra horizontalmente */
+
 }
 
 .footer_email {
@@ -641,13 +641,13 @@ button {
 
 .footer__copyright-text{
     text-align: center;
-}
+} */
 
 /**************************Caracgeristicas*********************************/
-.caracteristicas{
+/* .caracteristicas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Diseño para pantallas grandes */
-    gap: 20px; /* Espacio entre columnas */
+    grid-template-columns: 1fr 1fr 1fr; /* Diseño para pantallas grandes 
+    gap: 20px; /* Espacio entre columnas 
     padding: var(--padding-container);
 
 }
@@ -657,29 +657,29 @@ button {
     background: linear-gradient(90deg, var(--color-secundario),#331aea);
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto 
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    display: inline-block; /* Ajusta al contenido */
-    margin: 0; /* Elimina márgenes */
-    line-height: 1; /* Ajusta la altura de línea */
+    display: inline-block; /* Ajusta al contenido 
+    margin: 0; /* Elimina márgenes 
+    line-height: 1; /* Ajusta la altura de línea 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
 
 .boton-caracteristicas:hover {
-    transform: translateY(-2px); /* Efecto al pasar el cursor */
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto al pasar el cursor 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada 
 }
 .seccion-primera{
     padding: 30px 0px;
     display: grid;
     display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column; /* Alinea los elementos verticalmente 
+    align-items: flex-start; /* Alinea los elementos a la izquierda 
 
 }
 
@@ -700,11 +700,11 @@ button {
 .seccion-segunda-superior{
     display: grid;
     gap: 10px;
-}
+} */
 
 
 /***********************Beneficio****************************/
-.beneficios{
+/* .beneficios{
     padding: var(--padding-container);
 }
 
@@ -729,15 +729,15 @@ button {
       background-color: var(--color-secundario);
       background: linear-gradient(90deg, var(--color-secundario),#331aea);
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    text-decoration: none; 
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto 
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    display: inline-block; /* Ajusta al contenido */
-    margin: 20px 0px; /* Elimina márgenes */
-    line-height: 1; /* Ajusta la altura de línea */
+    display: inline-block; /* Ajusta al contenido 
+    margin: 20px 0px; /* Elimina márgenes 
+    line-height: 1; /* Ajusta la altura de línea 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
@@ -746,13 +746,13 @@ button {
 }
 
 .boton-beneficios:hover {
-    transform: translateY(-2px); /* Efecto al pasar el cursor */
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto al pasar el cursor 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada 
 }
 
 
 /*************************Testimonios**************************/
-.Testimonios{
+/* .Testimonios{
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -776,18 +776,18 @@ button {
 
 
 .testimonios-imagen {
-    width: 60px; /* Tamaño fijo de ancho */
-    height: 60px; /* Tamaño fijo de altura */
+    width: 60px; /* Tamaño fijo de ancho 
+    height: 60px; /* Tamaño fijo de altura 
     object-fit: cover;
-    border-radius: 50%; /* Hace la imagen circular */
+    border-radius: 50%; /* Hace la imagen circular 
 }
 
-.testimonios-clientes > div {
-    margin: 20px; /* Espacio alrededor de cada testimonio */
-    padding: 20px; /* Espacio interno */
-    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+/* .testimonios-clientes > div {
+    margin: 20px; /* Espacio alrededor de cada testimonio 
+    padding: 20px; /* Espacio interno 
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización 
+    border-radius: 10px; /* Esquinas redondeadas 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave 
     text-align: center;
     justify-content: center;
 }
@@ -803,11 +803,11 @@ button {
     text-align: center;
     margin: auto 0;
     padding-bottom: 20px;
-}
+} */ 
 
 
 /************************funtion*************************/
-
+/* 
 .funcion {
     text-align: center;
     justify-content: center;
@@ -824,36 +824,36 @@ button {
     margin: auto;
 }
 
-/* Diseño de las tarjetas */
+/* Diseño de las tarjetas 
 .tarjeta-funcion {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna por defecto */
+    grid-template-columns: 1fr; /* Una columna por defecto 
     gap: 50px;
     width: 100%;
     margin: auto;
 }
 
 .funcion-imagen {
-    width: 100%; /* Ajustable al contenedor */
-    max-width: 360px; /* Tamaño máximo en pantallas grandes */
-    height: auto; /* Mantiene proporción */
+    width: 100%; /* Ajustable al contenedor 
+    max-width: 360px; /* Tamaño máximo en pantallas grandes 
+    height: auto; /* Mantiene proporción 
     object-fit: cover;
-    border: 1px solid #ddd; /* Opcional: Bordes */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ddd; /* Opcional: Bordes 
+    border-radius: 10px; /* Esquinas redondeadas 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave 
     margin: auto;
 }
 
 .funcio__paragraph {
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem); /* Escalable */
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem); /* Escalable 
     padding-top: 10px;
 }
 
-
+ */
 
 /*Cotizar*/
-.cotizacion {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
+/* .cotizacion {
+    position: relative; 
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -865,60 +865,60 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden; /* Asegura que el pseudo-elemento no se salga del contenedor */
-}
+    overflow: hidden; /* Asegura que el pseudo-elemento no se salga del contenedor 
+} */
 
-.cotizacion::before {
-    content: ''; /* Crea el pseudo-elemento */
+/* .cotizacion::before {
+    content: ''; /* Crea el pseudo-elemento 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 241, 241, 0.6); /* Color negro con opacidad del 50% */
-    border-radius: 20px; /* Asegura que coincida con el borde del contenedor */
-    z-index: 1; /* Coloca la superposición debajo del texto */
+    background-color: rgba(245, 241, 241, 0.6); /* Color negro con opacidad del 50% 
+    border-radius: 20px; /* Asegura que coincida con el borde del contenedor 
+    z-index: 1; /* Coloca la superposición debajo del texto 
 }
 
 .cotizacion * {
-    position: relative; /* Coloca el contenido por encima de la superposición */
+    position: relative; /* Coloca el contenido por encima de la superposición 
     z-index: 2;
 }
 
 .cta__cotizar {
     background:#0909fe;
     padding: .4rem 2rem;
-    /* Agrega más espacio horizontal */
+    /* Agrega más espacio horizontal 
     border-radius: 10px;
     color: white;
     font-size: 1rem;
-    /* Ajusta el tamaño del texto */
+    /* Ajusta el tamaño del texto 
     font-weight: bold;
-    /* Hace que el texto sea más destacado */
+    /* Hace que el texto sea más destacado 
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    /* Asegura que actúe como un botón */
+    /* Asegura que actúe como un botón 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.9);
-    /* Sombra ligera */
+    /* Sombra ligera 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* Transiciones suaves */
+    /* Transiciones suaves 
 }
 
-/* Hover (Efecto al pasar el mouse) */
+/* Hover (Efecto al pasar el mouse) 
 .cta__cotizar:hover {
     transform: translateY(-3px);
-    /* Eleva ligeramente el botón */
+    /* Eleva ligeramente el botón 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Sombra más intensa */
+    /* Sombra más intensa 
     background:#000000;
-    /* Invierte el degradado */
+    /* Invierte el degradado 
 }
 
-/* Active (Efecto al hacer clic) */
+/* Active (Efecto al hacer clic) 
 .cta__cotizar:active {
     transform: translateY(1px);
-    /* Reduce el efecto de elevación */
+    /* Reduce el efecto de elevación 
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     }
 
@@ -970,19 +970,19 @@ button {
         display: flex;
         transition: transform 0.5s ease-in-out;
         gap: 10px;
-        width: max-content; /* Ajusta el ancho automáticamente */
+        width: max-content; /* Ajusta el ancho automáticamente 
     }
     
     .slider {
-        overflow: hidden; /* Oculta las imágenes fuera de la vista */
-        max-width: calc(300px * 1 + 30px); /* Muestra solo 4 imágenes visibles */
+        overflow: hidden; /* Oculta las imágenes fuera de la vista 
+        max-width: calc(300px * 1 + 30px); /* Muestra solo 4 imágenes visibles 
     }
     
     
     
     .slide {
         flex-shrink: 0;
-        width: 300px; /* Tamaño de las imágenes */
+        width: 300px; /* Tamaño de las imágenes 
     }
     
     .slide img {
@@ -1043,7 +1043,7 @@ button {
 
     .hero__main {
         display: grid;
-        grid-template-columns: 1fr 1.2fr; /* texto e imagen */
+        grid-template-columns: 1fr 1.2fr; /* texto e imagen 
         align-items: center;
         gap: 2rem;
         padding: 2rem;
@@ -1094,7 +1094,7 @@ button {
       grid-area: sub-titulo;
     }
 
-    /*cta*/
+    /*cta
     .cta__content {
         align-items: center;
         justify-content: space-between;
@@ -1110,7 +1110,7 @@ button {
         place-self: start;
     }
 
-    /*Contact*/
+    /*Contact
     .contact-titulo{
         text-align: center;
         padding: 5px 0px;
@@ -1118,19 +1118,19 @@ button {
     .contact__content {
         display: grid;
         grid-template-columns: 50% 40%;
-        /* Ajusta las proporciones si es necesario */
+        /* Ajusta las proporciones si es necesario 
         gap: 2rem;
-        /* Espacio entre columnas */
+        /* Espacio entre columnas 
         align-items: center;
-        /* Alinea verticalmente */
+        /* Alinea verticalmente 
     }
 
     .contact__figure {
         display: block;
-        /* Asegúrate de que sea visible */
+        /* Asegúrate de que sea visible 
     }
 
-    /*como funciona*/
+    /*como funciona
 
 .funcion
 {
@@ -1159,13 +1159,13 @@ button {
 }
 
 .funcion-imagen {
-    width: 360px; /* Tamaño fijo de ancho */
-    height: 200px; /* Tamaño fijo de altura */
+    width: 360px; /* Tamaño fijo de anch
+    height: 200px; /* Tamaño fijo de altura 
     object-fit: cover;
-    border-radius: 1%; /* Hace la imagen circular */
-    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 1%; /* Hace la imagen circular 
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización 
+    border-radius: 10px; /* Esquinas redondeadas 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave 
     text-align: center;
     justify-content: center;
 }
@@ -1180,9 +1180,9 @@ button {
 }
 
 .slider {
-    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+    overflow: hidden; /* Oculta las imágenes fuera de la vista 
     max-width: calc(300px * 2
-     + 30px); /* Muestra solo 4 imágenes visibles */
+     + 30px); /* Muestra solo 4 imágenes visibles 
 }
 
 
@@ -1211,7 +1211,7 @@ button {
         place-content: unset;
         gap: 1rem;
     }
-
+ */ 
 
     
 /*.hero__main {
@@ -1225,7 +1225,7 @@ button {
 
 /*Galeria*/
 
-.galeria {
+/* .galeria {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1245,19 +1245,19 @@ button {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 10px;
-    width: max-content; /* Ajusta el ancho automáticamente */
+    width: max-content; /* Ajusta el ancho automáticamente 
 }
 
 .slider {
-    overflow: hidden; /* Oculta las imágenes fuera de la vista */
-    max-width: calc(300px * 4 + 30px); /* Muestra solo 4 imágenes visibles */
+    overflow: hidden; /* Oculta las imágenes fuera de la vista 
+    max-width: calc(300px * 4 + 30px); /* Muestra solo 4 imágenes visibles 
 }
 
 
 
 .slide {
     flex-shrink: 0;
-    width: 300px; /* Tamaño de las imágenes */
+    width: 300px; /* Tamaño de las imágenes 
 }
 
 .slide img {
@@ -1312,11 +1312,11 @@ button.next:focus {
 }
   
 
-    /*footer*/
+    /*footer
 
     .footer {
         background:#0909fe;
-        /* background-color: #292a32; */
+        /* background-color: #292a32; 
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -1387,7 +1387,7 @@ button.next:focus {
     }
 
 
-    /*Beneficios*/
+    /*Beneficios
 
 .beneficios{
     padding: var(--padding-container);
@@ -1400,12 +1400,12 @@ button.next:focus {
 
 .beneficio-imagen {
     display: block;
-    width: 100%; /* Ancho del div */
-    height: 600px; /* Altura deseada del div */
+    width: 100%; /* Ancho del div 
+    height: 600px; /* Altura deseada del div 
     background-image: url('./assets/imagen-benificios.png');
-    background-size: cover; /* La imagen se ajusta al contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita la repetición */
+    background-size: cover; /* La imagen se ajusta al contenedor 
+    background-position: center; /* Centra la imagen 
+    background-repeat: no-repeat; /* Evita la repetición 
     border-radius: 20px;
 }
 
@@ -1430,14 +1430,14 @@ button.next:focus {
     background: linear-gradient(90deg, var(--color-secundario),#ff4500);
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto */
+    padding: 1rem 2rem; /* Ajusta el espacio alrededor del texto 
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    display: inline-block; /* Ajusta al contenido */
-    margin: 0; /* Elimina márgenes */
-    line-height: 1; /* Ajusta la altura de línea */
+    display: inline-block; /* Ajusta al contenido 
+    margin: 0; /* Elimina márgenes 
+    line-height: 1; /* Ajusta la altura de línea 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
@@ -1446,18 +1446,18 @@ button.next:focus {
 }
 
 .boton-beneficios:hover {
-    transform: translateY(-2px); /* Efecto al pasar el cursor */
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto al pasar el cursor 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada 
 }
 
 .beneficio-descripción-derecha{
     display: grid;
     gap: 50px;
-}
+} */
 
 
 /*Testimonios*/
-.testimonios-clientes{
+/* .testimonios-clientes{
     display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
@@ -1467,19 +1467,19 @@ button.next:focus {
 
 
 .testimonios-imagen {
-    width: 60px; /* Tamaño fijo de ancho */
-    height: 60px; /* Tamaño fijo de altura */
+    width: 60px; /* Tamaño fijo de ancho 
+    height: 60px; /* Tamaño fijo de altura 
     object-fit: cover;
-    border-radius: 50%; /* Hace la imagen circular */
+    border-radius: 50%; /* Hace la imagen circular 
 }
 
 
 .testimonios-clientes > div {
-    margin: 20px; /* Espacio alrededor de cada testimonio */
-    padding: 20px; /* Espacio interno */
-    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px; /* Espacio alrededor de cada testimonio 
+    padding: 20px; /* Espacio interno 
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización 
+    border-radius: 10px; /* Esquinas redondeadas 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave 
     text-align: center;
     justify-content: center;
 }
@@ -1497,7 +1497,7 @@ button.next:focus {
     padding-bottom: 20px;
 }
 
-/*como funciona*/
+/*como funciona
 
 .funcion
 {
@@ -1530,13 +1530,13 @@ button.next:focus {
 }
 
 .funcion-imagen {
-    width: 300px; /* Tamaño fijo de ancho */
-    height: 200px; /* Tamaño fijo de altura */
+    width: 300px; /* Tamaño fijo de ancho 
+    height: 200px; /* Tamaño fijo de altura 
     object-fit: cover;
-    border-radius: 1%; /* Hace la imagen circular */
-    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 1%; /* Hace la imagen circular
+    border: 1px solid #ddd; /* Opcional: Bordes para mejor visualización
+    border-radius: 10px; /* Esquinas redondeadas 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave 
     text-align: center;
     justify-content: center;
 }
@@ -1568,60 +1568,60 @@ button.next:focus {
   }
 
 
-
+ 
 
 }
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .caracteristicas {
-        grid-template-columns: 1fr 1fr; /* Cambia a 2 columnas */
-        padding: 20px; /* Ajusta el padding */
+        grid-template-columns: 1fr 1fr; /* Cambia a 2 columnas 
+        padding: 20px; /* Ajusta el padding 
     }
 
     .seccion-primera > h1 {
-        font-size: 40px; /* Reduce el tamaño del título */
+        font-size: 40px; /* Reduce el tamaño del título 
     }
 
     .seccion-segunda-superior > h3 {
-        font-size: 25px; /* Ajusta tamaño de los subtítulos */
+        font-size: 25px; /* Ajusta tamaño de los subtítulos 
     }
 }
 
-/* Para pantallas pequeñas (móviles) */
+/* Para pantallas pequeñas (móviles) 
 @media (max-width: 768px) {
     .caracteristicas {
-        grid-template-columns: 1fr; /* Cambia a 1 columna */
-        gap: 10px; /* Reduce el espacio entre los elementos */
+        grid-template-columns: 1fr; /* Cambia a 1 columna 
+        gap: 10px; /* Reduce el espacio entre los elementos 
     }
 
     .seccion-primera {
-        align-items: center; /* Centra los elementos */
-        text-align: center; /* Centra el texto */
+        align-items: center; /* Centra los elementos 
+        text-align: center; /* Centra el texto 
     }
 
     .seccion-primera > h1 {
-        font-size: 30px; /* Reduce más el tamaño del título */
+        font-size: 30px; /* Reduce más el tamaño del título 
     }
 
     .seccion-segunda-superior > h3 {
-        font-size: 20px; /* Reduce tamaño de los subtítulos */
+        font-size: 20px; /* Reduce tamaño de los subtítulos 
     }
 
     .boton-caracteristicas {
-        width: 100%; /* Botón ocupa todo el ancho */
-        text-align: center; /* Centra el texto */
-        padding: 0.8rem 1rem; /* Ajusta el espaciado */
+        width: 100%; /* Botón ocupa todo el ancho 
+        text-align: center; /* Centra el texto 
+        padding: 0.8rem 1rem; /* Ajusta el espaciado 
     }
 
     .seccion-segunda {
-        padding: 10px; /* Reduce el padding */
-    }
+        padding: 10px; /* Reduce el padding 
+    } */
 
   
 
     
-.contact {
+/* .contact {
     padding: 0rem;
     margin: 0rem;
     width: 100%;
@@ -1649,23 +1649,23 @@ button.next:focus {
 
 .fade-in-section {
     opacity: 0;
-    transform: translateY(20px); /* Desplazamiento inicial */
+    transform: translateY(20px); /* Desplazamiento inicial 
     transition: all 0.6s ease-out;
-    visibility: hidden; /* Oculta completamente fuera del viewport */
+    visibility: hidden; /* Oculta completamente fuera del viewport 
     padding-top: 20px;
 }
 
 .fade-in-section.is-visible {
     opacity: 1;
-    transform: translateY(0); /* Sin desplazamiento */
-    visibility: visible; /* Haz que sea visible */
-}
+    transform: translateY(0); /* Sin desplazamiento 
+    visibility: visible; /* Haz que sea visible 
+} */
 
 
 
 
 /* Animación */
-@keyframes bounce {
+/* @keyframes bounce {
 
     0%,
     80%,
@@ -1676,7 +1676,7 @@ button.next:focus {
     50% {
         transform: scale(1.5);
     }
-}
+} */
 
 /* @keyframes fadeInSlide {
     from {
@@ -1714,11 +1714,12 @@ body {
 
 /* ====== HEADER ====== */
 .header {
-  background: #f8f9fa;
+  background: #ec7a08;
   padding: 1rem 0;
 }
 
 .navbar {
+    background-color: chartreuse;
   display: flex;
   align-items: center;
   justify-content: space-between;
