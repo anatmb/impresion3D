@@ -1,500 +1,90 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@700,153&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexalamp3D</title>
+   <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
+  <!-- ====== HEADER / NAV ====== -->
+  <header class="header">
     <div class="container">
-   
-        <header class="fade-in-section hero">
-         
-
-            <nav class="nav" aria-label="Primary Navigation">
-              
-              <a href="./" class="nav_logo-link">
-                <img src="./assets/Logo9.png" class="nav__logo" alt="Hexalamp3D logo">
-              </a>
-          
-              <label for="nav-toggle" class="nav__label">
-                <input type="checkbox" class="nav__checkbox" id="nav-toggle" aria-hidden="true">
-                <span class="nav__burger"></span>
-              </label>
-          
-              <ul class="nav__list">
-                <li class="nav__element"><a href="#hero__main" class="nav__link">Home</a></li>
-                <li class="nav__element"><a href="#services" class="nav__link">Servicios</a></li>
-                <li class="nav__element"><a href="#caracteristicas" class="nav__link">Características</a></li>
-                <li class="nav__element"><a href="#testimonials" class="nav__link">Testimonios</a></li>
-                <li class="nav__element"><a href="#contact" class="nav__link">Contacto</a></li>
-              </ul>
-            </nav>
-          
-            <section class="hero__main">
-              <div class="hero__content">
-                <h6 class="hero__sub-titulo">Hexalamp3D 💡</h6>
-                <h1 class="hero__title">Diseño e impresión 3D</h1>
-                <p class="hero__paragraph">
-                  Nuestra empresa se dedica a ofrecer soluciones de impresión 3D personalizadas para diversas
-                  industrias. Creemos en la creatividad y la tecnología como motores de cambio.
-                </p>
-                <a href="#contact" class="hero__cta">Contáctanos</a>
-              </div>
-          
-              <figure class="hero__figure">
-                <img src="./assets/home.png" class="hero__img" alt="Impresión 3D en proceso">
-              </figure>
-            </section>
-          </header>
-
-        <main class="main">
-            <section class=" fade-in-section  cta">
-                <article class="cta__content">
-
-                    <div class="cta__texts">
-                        <h2 class="title">
-                            Hexalamp3D
-                        </h2>
-
-                        <p class="cta__paragragh">
-                            Descubre el fascinante mundo
-                            de la impresión 3D. Transformamos tus ideas en
-                            realidades tangibles con tecnología de vanguardia.
-                        </p>
-
-                        <a href="#contact" class="cta__links">Contáctanos</a>
-
-                    </div>
-
-                    <figure class="cta__figure">
-                        <img src="./assets/1-removebg-preview.png" alt="" class="cta__img">
-                    </figure>
-
-                </article>
-
-            </section>
-
-            <section class=" fade-in-section caracteristicas " id="caracteristicas">
-                <div class="seccion-primera">
-                    <p>Impresión</p>
-                    <h1 class="hero__title">Caracteristicas destacadas de nuestra impresión 3D</h1>
-                    <p>
-                        Nuestra impresión 3D ofrece calidad excepcional y resultados precisos.Con tecnologías
-                        avanzada,garantizamos rapidez y personalización en cada proyecto
-                    </p>
-                    <br>
-                    <a href="#services" class="hero__cta">Servicios 👈🏼</a>
-                </div>
-                <div class="seccion-segunda">
-                    <div class="seccion-segunda-superior">
-                        <img src="./assets/cube.svg" alt="">
-                        <h3>Calidad superior en cada imresión 3D</h3>
-                        <p>Utilizamos material de alta calidad para asegurar resultados duraderos </p>
-                    </div>
-
-                    <div class="seccion-segunda-superior">
-                        <img src="./assets/cube.svg" alt="">
-                        <h3>Personalización total para tus necesidades específicas</h3>
-                        <p>Adaptamos cada diseño a tus requerimientos únicos </p>
-                    </div>
-                </div>
-                <div class="seccion-segunda">
-                    <div class="seccion-segunda-superior">
-                        <img src="./assets/cube.svg" alt="">
-                        <h3>Rapidez en la entrega de tus proyectos</h3>
-                        <p>Nuestro proceso optimizado garantiza tiempos de entrega rápidos </p>
-                    </div>
-
-                    <div class="seccion-segunda-superior">
-                        <img src="./assets/cube.svg" alt="">
-                        <h3>Tecnología avanzada para resultados impresionantes</h3>
-                        <p>Incorporamos las últimas innovaciones en impresión 3D </p>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="fade-in-section services" id="services">
-                <h1 class="hero__title">En que te puedo ayudar🤝​</h1>
-                <p class="paragraph">
-                    Ofrecemos soluciones personalizadas de impresión 3D con alta precisión, rapidez y calidad, ideales
-                    para proyectos creativos, prototipos y piezas funcionales.
-                </p>
-
-                <section class="services__container">
-
-                    <article class="services__article services__article--gray">
-                        <div class="services__content">
-                            <img src="./assets/bx-card.svg" alt="" class="services__img">
-                        </div>
-
-                        <h3 class="services__title">
-                            <span class="services__span">
-                                Prototipado Rápido
-                            </span>
-                        </h3>
-
-                        <p class="paragraph-tarjetas">Creación de prototipos para diseñadores, ingenieros o
-                            emprendedores que necesiten validar sus ideas o productos antes de la fabricación en masa.
-                        </p>
-
-                        <!-- <div class="services__content">
-                            <img src="./assets/arrow.svg" alt="" class="services__img">
-                        </div> -->
-                    </article>
-
-                    <article class="services__article services__article--gray">
-                        <div class="services__content">
-                            <img src="./assets/bx-palette.svg" alt="" class="services__img">
-                        </div>
-                        <h3 class="services__title">
-                            <span class="services__span">
-                                Personalización de
-                            </span>
-
-                            <span class="services__span">
-                                Productos
-                            </span>
-                        </h3>
-
-                        <p class="paragraph-tarjetas">Llaveros, figuras decorativas, trofeos personalizados, accesorios
-                            únicos o piezas específicas para proyectos.</p>
-
-                        <!-- <div class="services__content">
-                         
-                            <img src="./assets/coding-1-29.svg" alt="" class="services__img">
-                        </div> -->
-                    </article>
-
-                    <article class="services__article services__article--gray">
-                        <div class="services__content">
-                            <img src="./assets/bxs-wrench.svg" alt="" class="services__img">
-                        </div>
-                        <h3 class="services__title">
-                            <span class="services__span">
-                                Reparación y
-                            </span>
-
-                            <span class="services__span">
-                                Reemplazo de Piezas
-                            </span>
-                        </h3>
-
-                        <p class="paragraph-tarjetas">Reemplazo de piezas rotas o difíciles de conseguir, como
-                            engranajes, soportes, tapas, etc.</p>
-                        <!-- <div class="services__content">
-                        
-                            <img src="./assets/coding-1-29.svg" alt="" class="services__img">
-                        </div> -->
-                    </article>
-
-                </section>
-            </section>
-
-            <section class="fade-in-section galeria">
-                <h1 class="hero__title">
-                    Proyectos más destacados
-                </h1>
-                <p class="paragraph">
-                    Proyectos innovadores, creativos, funcionales, impactantes, personalizados, únicos, visuales, modernos, eficientes, dinámicos.
-                </p>
-                <br>
-                <div class="slider">
-                    <div class="slider-container">
-                        <div class="slide"><img class="img-slide" src="./assets/p1.png" alt="Imagen 1"></div>
-                        <div class="slide"><img src="./assets/p2.jpg" alt="Imagen 2"></div>
-                        <div class="slide"><img src="./assets/p3.png" alt="Imagen 3"></div>
-                        <div class="slide"><img src="./assets/p4.jpg" alt="Imagen 4"></div>
-                        <div class="slide"><img src="./assets/p5.jpg" alt="Imagen 5"></div>
-                        <div class="slide"><img src="./assets/p6.png" alt="Imagen 6"></div>
-                        <div class="slide"><img src="./assets/p7.jpg" alt="Imagen 7"></div>
-                        <div class="slide"><img src="./assets/p8.jpg" alt="Imagen 7"></div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="fade-in-section beneficios">
-                <div class="beneficio-descripción">
-                    <div class="beneficio-descripción-izquierda">
-                        <p>Inovación</p>
-                        <h1 class="hero__title">
-                            Descubre los Beneficios de la Impresión 3D
-                        </h1>
-
-                    </div>
-
-                    <div class="beneficio-descripción-derecha">
-                        <div>
-                            <p>
-                                La impresión 3D transforma tus ideas en realidad, permitiéndote crear prototipos
-                                personalizados y únicos. Optimiza procesos y reduce costos con soluciones innovadoras.
-                            </p>
-                        </div>
-                        <div class="beneficios-reduccion-costo">
-                            <div>
-                                <img src="./assets/cube.svg" alt="">
-                                <h3>Personalización Total</h3>
-                                <p>Crea productos a medida que se adaptan a tus necesidades específicas.</p>
-                            </div>
-
-                            <div>
-                                <img src="./assets/cube.svg" alt="">
-                                <h3>Reducción de Costos</h3>
-                                <p>Minimiza gastos en producción sin sacrificar calidad ni precisión.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#services" class="hero__cta">Servicios</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="beneficio-imagen">
-                </div> -->
-            </section>
-
-            <!-- <section class="faq">
-                <h2 class="title title__highlight">Our working process</h2>
-
-                <section class="faq__container">
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <h4 class="faq__title">
-                                 Ingresa tu pregunta
-                            </h4>
-                           
-                        </summary>
-
-                        <article class="faq__answer">
-                            <p>Lorem ipsum dolor sit, amet
-                                 consectetur adipisicing elit. 
-                                 Unde qui voluptas ab temporibus architecto 
-                                 rem obcaecati quisquam nisi illum vitae aliquam,
-                                  libero minus corporis fuga, veniam dolores! Officia, ratione accusamus?
-                            </p>
-                        </article>
-                    </details>
-
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <h4 class="faq__title">
-                                 Ingresa tu pregunta
-                            </h4>
-                           
-                        </summary>
-
-                        <article class="faq__answer">
-                            <p>Lorem ipsum dolor sit, amet
-                                 consectetur adipisicing elit. 
-                                 Unde qui voluptas ab temporibus architecto 
-                                 rem obcaecati quisquam nisi illum vitae aliquam,
-                                  libero minus corporis fuga, veniam dolores! Officia, ratione accusamus?
-                            </p>
-                        </article>
-                    </details>
-
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <h4 class="faq__title">
-                                 Ingresa tu pregunta
-                            </h4>
-                           
-                        </summary>
-
-                        <article class="faq__answer">
-                            <p>Lorem ipsum dolor sit, amet
-                                 consectetur adipisicing elit. 
-                                 Unde qui voluptas ab temporibus architecto 
-                                 rem obcaecati quisquam nisi illum vitae aliquam,
-                                  libero minus corporis fuga, veniam dolores! Officia, ratione accusamus?
-                            </p>
-                        </article>
-                    </details>
-
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <h4 class="faq__title">
-                                 Ingresa tu pregunta
-                            </h4>
-                           
-                        </summary>
-
-                        <article class="faq__answer">
-                            <p>Lorem ipsum dolor sit, amet
-                                 consectetur adipisicing elit. 
-                                 Unde qui voluptas ab temporibus architecto 
-                                 rem obcaecati quisquam nisi illum vitae aliquam,
-                                  libero minus corporis fuga, veniam dolores! Officia, ratione accusamus?
-                            </p>
-                        </article>
-                    </details>
-                </section>
-
-            </section> -->
-
-            <section class="fade-in-section Testimonios" id="testimonials">
-                <div class="Testimonio-titulo">
-
-                    <h1 class="titulo-testimonio">Testimonios de clientes</h1>
-                    <p>Nuestros clientes están encantados con el servicio.</p>
-
-                </div>
-
-                <div class="testimonios-clientes">
-                    <div class="cada-cliente">
-                        <p>⭐​⭐​⭐​⭐​⭐​</p>
-                        <p>"La calidad de impresión superó nuestras expectativas."</p>
-                        <img src="./assets/laura.png" alt="" class="testimonios-imagen">
-                        <h5>Laura</h5>
-                        <p>@laisgal75</p>
-                    </div>
-                    <div class="cada-cliente">
-                        <p>⭐​⭐​⭐​⭐​⭐​</p>
-                        <p>"El proceso fue rápido, buena comunicación y profesional."</p>
-                        <img src="./assets/foto.png" alt="" class="testimonios-imagen">
-                        <h5>Marcelo Benítez</h5>
-                        <p>Motos Esquina</p>
-                    </div>
-                    <div class="cada-cliente">
-                        <p>⭐​⭐​⭐​⭐​⭐​</p>
-                        <p>"Recomiendo este servicio a todos mis colegas."</p>
-                        <img src="./assets/mauge.png" alt="" class="testimonios-imagen">
-                        <h5>Mauge</h5>
-                        <p>@maumaugalvaliz</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section class="fade-in-section funcion">
-                <div class="encabezado-titulo">
-                    <h1 class="titulo-funcion">Descubre cómo funciona.</h1>
-                    <p>La impresión 3D en simples pasos</p>
-                </div>
-
-                <div class="tarjeta-funcion">
-
-                    <div class="tarjeta-1">
-                        <div>
-                            <img src="./assets/11.png" alt="" class="funcion-imagen">
-                        </div>
-                        <br>
-                        <h4>Paso 1: Diseña tu modelo en un software especializado.</h4>
-                        <p class="funcio__paragraph">Comienza creando un diseño digital que represente tu idea.</p>
-                    </div>
-                    <div class="tarjeta-1">
-                        <div>
-                            <img src="./assets/22.jpeg" alt="" class="funcion-imagen">
-                        </div>
-                        <br>
-                        <h4>Paso 2: Prepara el archivo para la impresión 3D.</h4>
-                        <p class="funcio__paragraph">Convierte tu diseño en un formato que la impresora pueda entender.
-                        </p>
-                    </div>
-
-                    <div class="tarjeta-1">
-                        <div>
-                            <img src="./assets/33.png" alt="" class="funcion-imagen">
-                        </div>
-                        <br>
-                        <h4>Paso 3: Se imprime.</h4>
-                        <p class="funcio__paragraph">El diseño en 3D con precisión y materiales personalizados.</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section class="fade-in-section cotizacion">
-
-                <h2>Solicita tu cotización ahora</h2>
-                <p>Descrubre cómo nuestra impresora 3D puede trasnformar tus ideas en realidad.¡Contáctanos hoy!
-
-                </p>
-
-                <br>
-
-                <a href="https://wa.me/3777881161?text=Hola%20estoy%20interesado%20en%20una%20cotización%20para%20impresión%203D"
-                    target="_blank" rel="noopener noreferrer" class="cta__cotizar">Cotizar</a>
-
-            </section>
-
-            <section class="fade-in-section contact-titulo" id="contact">
-                <h2 class="titulo-beneficio">
-                    Contacto
-                </h2>
-                <p class="paragraph">
-                    Hablemos de tus ideas y hagámoslas realidad. Escríbeme, ¡estoy a un clic de distancia!
-                </p>
-            </section>
-
-            <section class="contact__content">
-                <section class="contact">
-                    <div class="contact-info">
-                        <p><strong>Teléfono:</strong>+54 9 3777 88-1161</p>
-                        <p><strong>Correo:</strong> hexalamp1@gmail.com</p>
-                        <p><strong>Dirección:</strong> Corriente, Esquina</p>
-                    </div>
-                </section>
-
-                <figure class="contact__figure">
-                    <img src="./assets/contact.jpg" class="contact__img" alt="Contact">
-                </figure>
-            </section>
-
-        </main>
+      <nav class="navbar">
+        <a href="#" class="logo">MiMarca</a>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#benefits">Beneficios</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <footer class="fade-in-section footer">
-        <div class="footer__content">
-            <section class="footer__main">
-                <a href="" class="footer__logo-link">
-                    <img src="./assets/Logo9.png" alt="" class="footer__logo">
-                </a>
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Tu mensaje principal aquí</h1>
+      <p>Subtítulo que refuerza tu propuesta de valor.</p>
+      <a href="#services" class="btn">Ver servicios</a>
+    </div>
+  </section>
 
-                <nav class="footer__links">
-                    <a href="#hero__main" class="footer__link"> Home</a>
-                    <a href="#services" class="footer__link"> Servicios</a>
-                    <a href="#caracteristicas" class="footer__link"> Caracteristicas</a>
-                    <a href="#testimonials" class="footer__link"> Testimonios</a>
-                    <a href="#contact" class="footer__link"> Contacto</a>
-                </nav>
-                <nav class="footer__social">
-                    <a href="https://www.instagram.com/hexalamp3d/" target="_blank" rel="noopener noreferrer"
-                        class="footer__social-links">
-                        <img src="./assets/bxl-instagram.svg" alt="" class="footer_media">
-                    </a>
-                </nav>
-            </section>
-            <section class="footer__copyright">
-                <p class="footer__copyright-text">
-                    &copy;Jose Daniel Allen - Derechos reservados
-                </p>
-            </section>
-        </div>
-    </footer>
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Aquí una breve descripción de quién eres o qué hace tu marca.</p>
+    </div>
+  </section>
 
-    <a href="https://wa.me/3777881161?text=Hola%20estoy%20interesado%20en%20una%20cotización%20para%20impresión%203D"
-        class="whatsapp-button" target="_blank" aria-label="Contacta por WhatsApp">
-        <img src="./assets/WhatsApp.png" alt="WhatsApp" />
-    </a>
+  <!-- ====== BENEFICIOS ====== -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <h2>Beneficios</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">Beneficio 1</div>
+        <div class="benefit-item">Beneficio 2</div>
+        <div class="benefit-item">Beneficio 3</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ====== SERVICIOS ====== -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">Servicio 1</div>
+        <div class="service-card">Servicio 2</div>
+        <div class="service-card">Servicio 3</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ====== CONTACTO ====== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
