@@ -1693,10 +1693,11 @@ button.next:focus {
 /* ====== RESET ====== */
 
 :root {
-  --color-primary: #0077FF;
+  --color-primary: #E5E7EB;
   --color-secondary: #FF6B35;
   --color-bg-light: #F8F9FA;
   --color-text: #333333;
+  --colornavarhover:#2563EB;
   --color-text-secondary: #555555;
   --color-border: #E5E5E5;
   --color-white: #FFFFFF;
@@ -1740,13 +1741,24 @@ h3 {
   margin-bottom: 1rem;
 }
 
-
-
 p {
   font-size: 16px;    /* Texto base */
   font-weight: 400;   /* Regular */
   color: #555;        /* Un gris más suave */
   margin-bottom: 1rem;
+}
+
+.btn {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #0056b3; /* tono más oscuro */
 }
 
 /* ====== LAYOUT ====== */
@@ -1774,7 +1786,9 @@ p {
 }
 
 .logo {
-  width: 30%;
+  display: flex;               /* pone imagen + texto en fila */
+  align-items: center;         /* centra verticalmente */
+  gap: 0.5rem;                 /* espacio entre logo e imagen */
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
@@ -1783,9 +1797,9 @@ p {
 }
 
 .nav__logo{
-    width: 9%;
-    height: 9%;
-    background-color: #d84365;
+    width: 40px;                 /* usa px mejor que % */
+  height: auto;                /* mantiene proporción */
+  display: block;
 }
 
 
@@ -1799,23 +1813,32 @@ p {
 .nav-links a {
   text-decoration: none;
   color: var(--color-text);
-  color: #333;
+  color: #4B5563;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #0077ff;
-  color: var(--color-primary);
+  color: var(--color-white);
+  background-color: var(--colornavarhover);
+  padding: 5px;
+  border-radius: 5%;
 }
 
 /* ====== HERO ====== */
 .hero {
-  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  /* background: url('./assets/imagen-benificios1.jpg') center/cover no-repeat; */
   padding: 6rem 0;
   text-align: center;
   /* color: #fff; */
    background: var(--color-primary);
   color: var(--color-white);
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;       /* centra verticalmente texto e imagen */
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .hero h1 {
@@ -1831,7 +1854,7 @@ p {
  }
 
 
-.btn {
+.hero .btn {
   display: inline-block;
   font-size: 16px;
   font-weight: 500; /* un poco más fuerte que el texto */
@@ -1846,9 +1869,15 @@ p {
     background: var(--color-secondary);
 }
 
-.btn:hover {
+.hero .btn:hover {
   /* background: #0056b3; */
    background: #e55a27; 
+}
+
+.hero__img {
+  max-width: 500px; /* controla el tamaño de la imagen */
+  width: 100%;
+  height: auto;
 }
 
 /* ====== SECTIONS ====== */
