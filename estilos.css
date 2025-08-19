@@ -1797,15 +1797,18 @@ p {
 
 .nav-links a {
   text-decoration: none;
+    font-weight: 400; /* Regular */
+  font-size: 16px;
   color: var(--color-text);
   color: #4b5563;
+    padding: 10px;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
   color: var(--color-white);
   background-color: var(--colornavarhover);
-  padding: 5px;
+  padding: 10px;
   border-radius: 5%;
 }
 
@@ -1910,9 +1913,9 @@ p {
 }
 
 .hero__img {
-  max-width: 500px; /* controla el tamaño de la imagen */
+  /* max-width: 900px;  */
   width: 100%;
-  height: auto;
+ 
   border-radius: 30px;
 }
 
