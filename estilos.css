@@ -199,6 +199,12 @@ body {
   margin: 0;
 }
 
+.card-list3 {
+  list-style: none; /* quitamos viñetas por defecto */
+  padding: 0;
+  margin: 0;
+}
+
 
 .card-list li {
   background: url('./assets/viñeta.png') no-repeat left center; /* imagen de tilde */
@@ -213,6 +219,16 @@ body {
 
 .card-list2 li {
   background: url('./assets/viñeta2.png') no-repeat left center; /* imagen de tilde */
+  background-size: 20px 20px; /* tamaño del ícono */
+  padding-left: 30px; /* espacio para el ícono */
+  margin-bottom: 10px; /* separación entre ítems */
+   font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.card-list3 li {
+  background: url('./assets/viñeta3.png') no-repeat left center; /* imagen de tilde */
   background-size: 20px 20px; /* tamaño del ícono */
   padding-left: 30px; /* espacio para el ícono */
   margin-bottom: 10px; /* separación entre ítems */
