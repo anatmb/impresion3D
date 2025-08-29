@@ -185,7 +185,7 @@ body {
   font-size: 1rem;
   color: #555;
   line-height: 1.4;
-  text-align:left;
+  text-align: left;
 }
 
 .card-description1 {
@@ -194,7 +194,6 @@ body {
   line-height: 1.4;
   text-align: center;
 }
-
 
 .card-list {
   list-style: none; /* quitamos viñetas por defecto */
@@ -315,25 +314,23 @@ body {
     margin: auto;
   }
 
-    .services .container {
+  .services .container {
     width: 100%; /* ahora ocupa todo el ancho */
     max-width: 1280px; /* opcional, para no ser gigante en pantallas enormes */
   }
 
   .service-card {
-  background: var(--color-primary);
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  max-width: 358px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex; /* 🔹 Activamos flex */
-  flex-direction: column; /* 🔹 Apilamos en columna */ /* 🔹 Ahora sí funciona */
-  gap: 24px;
-}
-
-
+    background: var(--color-primary);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 358px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* 🔹 Activamos flex */
+    flex-direction: column; /* 🔹 Apilamos en columna */ /* 🔹 Ahora sí funciona */
+    gap: 24px;
+  }
 }
 
 /* ====== Laptop (mínimo 1024px) ====== */
@@ -614,19 +611,30 @@ body {
     border-radius: 12px;
   }
 
-  .benefit-item-h2{
+  .benefit-item-h2 {
     display: flex;
     text-align: left;
     justify-content: left;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
   }
 
-  .benefits-item-1{
-   display:flex;
-   text-align: left;
-   gap: 0px 10px;
+  .benefits-item-1-p > p {
+    color: var(--color-text); 
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
   }
 
-
+  .benefits-item-1 {
+    display: flex;
+    text-align: left;
+    gap: 0px 10px;
+  }
 
   /* ====== SERVICIOS ====== */
 
@@ -659,7 +667,6 @@ body {
     display: flex;
     margin: auto;
     justify-content: center;
-  
   }
 
   .service-card {
@@ -667,7 +674,7 @@ body {
     border: 1px solid #ddd;
     padding: 2rem;
     border-radius: 12px;
-    text-align:left;
+    text-align: left;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
 
