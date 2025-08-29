@@ -609,11 +609,24 @@ body {
   }
 
   .benefit-item {
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     padding: 2rem;
     border-radius: 12px;
-    text-align: center;
   }
+
+  .benefit-item-h2{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .benefits-item-1{
+   display:flex;
+   text-align: left;
+   gap: 0px 10px;
+  }
+
+
 
   /* ====== SERVICIOS ====== */
 
