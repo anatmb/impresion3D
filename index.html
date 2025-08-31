@@ -11,22 +11,28 @@
 
 <body>
   <!-- ====== HEADER / NAV ====== -->
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <img src="./assets/Logo9.png" class="nav__logo" alt="Hexalamp3D logo"> Hexalamp3D
-        </a>
-        <ul class="nav-links">
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#benefits">Beneficios</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#proyecto">Proyecto</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="./assets/Logo9.png" class="nav__logo" alt="Hexalamp3D logo"> Hexalamp3D
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <!-- ====== HERO ====== -->
   <section class="hero">
@@ -56,7 +62,7 @@
   </section> -->
 
   <!-- ====== SERVICIOS ====== -->
-  <section id="services" class="services">
+   <section id="services" class="services">
     <h2>Nuestros Servicios</h2>
     <p class="card-description1">Ofrecemos soluciones completas de impresión 3D adaptadas a tus necesidades específicas
     </p>
@@ -99,14 +105,9 @@
             <li>Revisiones ilimitadas</li>
           </ul>
         </div>
-
       </div>
-
-
-
-
     </div>
-  </section>
+  </section> 
 
   <!-- ====== BENEFICIOS ====== -->
   <section id="benefits" class="benefits">
@@ -144,13 +145,15 @@
             </div>
           </div>
         </div>
-        <div class="benefit-item"> <img src="./assets/elegirnos.png" alt="Servicio 1"></div>
+        <div class="benefit-item benefit-img">
+           <img src="./assets/elegirnos.png" alt="Servicio 1">
+       </div>
       </div>
     </div>
   </section>
 
   <!-- ====== CONTACTO ====== -->
-  <section id="contact" class="contact">
+  <!-- <section id="contact" class="contact">
     <div class="container">
       <h2>Contacto</h2>
       <form class="contact-form">
@@ -160,14 +163,14 @@
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- ====== FOOTER ====== -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/script.js"></script>
 </body>
