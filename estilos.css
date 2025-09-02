@@ -124,7 +124,7 @@ body {
   border-radius: 30px;
 }
 
-.derecha{
+.derecha {
   padding-top: 20px;
 }
 
@@ -280,17 +280,17 @@ body {
   flex-direction: column;
   align-items: left;
   gap: 0.8rem;
-   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-  .benefits-item-1 {
-    display: flex;
-    /* background-color: coral; */
-    text-align: left; /* centra el texto */
-    gap: 10px;
-    padding:0px;
-  }
+.benefits-item-1 {
+  display: flex;
+  /* background-color: coral; */
+  text-align: left; /* centra el texto */
+  gap: 10px;
+  padding: 0px;
+}
 
 .benefit-item:hover {
   transform: translateY(-4px);
@@ -319,19 +319,18 @@ body {
   line-height: 1.4;
 }
 
-
 /* ====== PROYECTOS ====== */
 .proyectos {
   /* background-color: deeppink; */
-  width: 100%;              /* Que cubra todo el ancho de la pantalla */
+  width: 100%; /* Que cubra todo el ancho de la pantalla */
   text-align: center;
-  padding: 2rem 0;          /* espacio arriba y abajo */
+  padding: 2rem 0; /* espacio arriba y abajo */
 }
 
 .proyectos .container {
-  max-width: 1280px;        /* ancho máximo del contenido */
-  margin: 0 auto;           /* centra el contenido */
-  padding: 0 1rem;          /* margen interno para que no pegue a los bordes */
+  max-width: 1280px; /* ancho máximo del contenido */
+  margin: 0 auto; /* centra el contenido */
+  padding: 0 1rem; /* margen interno para que no pegue a los bordes */
 }
 
 .proyectos h2 {
@@ -357,7 +356,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -377,13 +376,12 @@ body {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 5px;
 }
-
 
 /* SECCIÓN CTA */
 .cta {
@@ -437,6 +435,91 @@ body {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.footer {
+  background: #0e1525; /* azul oscuro como la imagen */
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center; /* centra en el eje horizontal */
+  align-items: center; /* centra en el eje vertical */
+  text-align: center; /* solo sirve si hay texto dentro */
+  padding: 20px;
+  border-top: 1px solid #a29e9e; /* línea arriba */
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.logo-footer {
+  color: #e5e5e5;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer p,
+.footer a,
+.footer li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer .socials a {
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.footer .socials a:hover {
+  color: #fff;
+}
+
+.footer-newsletter form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.footer-newsletter button {
+  background: #2563eb; /* azul botón */
+  border: none;
+  padding: 0 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 /* ====== MEDIA QUERIES ====== */
@@ -497,26 +580,22 @@ body {
     line-height: 40px;
     letter-spacing: 0;
   }
-  
-   .proyectos-grid {
-     grid-template-columns: repeat(3, 1fr);/* en móvil, una sola columna */
+
+  .proyectos-grid {
+    grid-template-columns: repeat(3, 1fr); /* en móvil, una sola columna */
   }
 
   .card-large {
     grid-column: span 1;
   }
 
-  
-.cta-buttons {
-  display: flex;
-  flex-direction:row;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-
- 
+  .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Laptop */
@@ -556,12 +635,10 @@ body {
     font-size: 1.2rem;
   }
 
-
   .services .container {
-
-  margin: 0 auto; /* centra el contenido */
-  padding: 0 2rem;
-}
+    margin: 0 auto; /* centra el contenido */
+    padding: 0 2rem;
+  }
 
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -571,7 +648,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-   .benefit-img {
+  .benefit-img {
     display: block;
     width: 100%;
   }
