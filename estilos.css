@@ -124,6 +124,10 @@ body {
   border-radius: 30px;
 }
 
+.derecha{
+  padding-top: 20px;
+}
+
 .btn-hero {
   display: flex;
   flex-direction: column;
@@ -487,6 +491,13 @@ body {
   .hero p {
     font-size: 1.2rem;
   }
+
+
+  .services .container {
+
+  margin: 0 auto; /* centra el contenido */
+  padding: 0 2rem;
+}
 
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
