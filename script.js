@@ -58,3 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Configurar el slider automático
     setInterval(moveSlider, 3000); // Cambia cada 3 segundos
 });
+
+

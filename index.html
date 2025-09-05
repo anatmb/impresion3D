@@ -51,7 +51,7 @@
 </header>
 
   <!-- ====== HERO ====== -->
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="container">
       <div class="izquierda">
         <h1>Impresión 3D <span class="span-titulo">Creativa </span>y Personalizada</h1>
@@ -78,7 +78,7 @@
   </section> -->
 
   <!-- ====== SERVICIOS ====== -->
-   <section id="services" class="services">
+   <section id="services" class="services fade-left">
     <h2>Nuestros Servicios</h2>
     <p class="card-description1">Ofrecemos soluciones completas de impresión 3D adaptadas a tus necesidades específicas
     </p>
@@ -126,7 +126,7 @@
   </section> 
 
   <!-- ====== BENEFICIOS ====== -->
-  <section id="benefits" class="benefits">
+  <section id="benefits" class="benefits fade-right">
     <div class="container">
       <div class="benefits-grid">
         <div class="benefit-item">
@@ -169,7 +169,7 @@
   </section>
 
     <!-- ====== Proyectos ====== -->
- <section id="proyectos" class="proyectos">
+ <section id="proyectos" class="proyectos fade-in">
   <h2>Trabajos Realizados</h2>
   <p class="card-description1">Explora alguno de nuestros proyectos más destacados</p>
 
@@ -192,11 +192,11 @@
 </section>
 
 <!-- ====== ELEGIRNOS ====== -->
-  <section id="benefits" class="benefits">
+  <section id="benefits" class="benefits fade-right">
     <div class="container">
       <div class="benefits-grid">
         <div class="benefit-item">
-          <h2 class="benefit-item-h2">¿Por qué elegir Print3D Pro?</h2>
+          <h2 class="benefit-item-h2">¿Por qué elegir Hexalamp3D?</h2>
           <div class="benefits-item-1">
             <div>
               <img class="card-img" src="./assets/EL.png" alt="Servicio 1">
@@ -236,7 +236,7 @@
 
 
     <!-- ====== Call ====== -->
-  <section id="call" class="cta">
+  <section id="call" class="cta fade-in">
     <div class="container">
       <h2>¿Listo para dar vida a tu idea?</h2>
       <p>Contáctanos hoy y recibe una cotización personalizada para tu proyecto de impresión 3D. Consulta gratuita incluida.</p>
@@ -268,7 +268,7 @@
     </div>
   </footer>  -->
   
-  <section id="footer" class="footer">
+  <section id="footer" class="footer fade-in">
   <div class="container">
     <div class="footer-grid">
       
@@ -320,6 +320,21 @@
     </div>
 </section>
   <script src="js/script.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in, .fade-left, .fade-right");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 }); // 20% visible para activar animación
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
 </body>
 
 </html>
