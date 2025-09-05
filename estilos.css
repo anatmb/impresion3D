@@ -30,22 +30,24 @@ body {
 .header {
   background: var(--color-white);
   /* background-color: indigo; */
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   border-bottom: 1px solid var(--color-border);
   width: 100%;
+ 
 }
 
 .header .container {
   /* background-color: #f8f9fa; */
   max-width: 1170px;
   margin: auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 }
 
 .logo {
@@ -67,8 +69,13 @@ body {
 }
 
 .banner{
-  background-color: #0e1525;
-  padding:0px 70px;
+  background-color: #000000;
+  padding: 2px 10px;
+  color: rgb(136, 134, 134);
+  display: flex;                /* activa flexbox */
+  justify-content: space-between; /* separa a los extremos */
+  align-items: center; 
+  font-size: 12px;
 }
 
 /* ======= Navbar base ======= */
@@ -662,6 +669,7 @@ body {
 
 /* Desktop grande */
 @media (min-width: 1280px) {
+
   h1 {
     font-size: 60px;
     font-weight: 700;
